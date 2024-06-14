@@ -35,12 +35,16 @@
                 Analizar código
             </button>
         </div>
-        <div class="results-section bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex">
-            <div class="line-container flex-1" >
-                <ul id="token-list" class="text-black"></ul>
+        <div class="container mx-auto p-4 flex flex-wrap h-48"> 
+            <div class="results-section bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-1 overflow-y-auto h-full"> 
+                <div class="symbol-container flex-1">
+                    <pre id="results" class="text-black"></pre>
+                </div>
             </div>
-            <div class="symbol-container flex-1">
-                <pre id="results" class="text-black"></pre>
+            <div class="additional-section bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-1 overflow-y-auto h-full">
+                <div class="new-content flex-1">
+                    <pre id="results-2" class="text-black"></pre>
+                </div>
             </div>
         </div>
         <div class="table-section mt-8 text-black">
@@ -48,10 +52,8 @@
                 <thead>
                     <tr class="bg-gray-200">
                         <th class="border border-black px-4 py-2">Token</th>
-                        <th class="border border-black px-4 py-2">PR Python</th>
-                        <th class="border border-black px-4 py-2">PR Java</th>
-                        <th class="border border-black px-4 py-2">PR C++</th>
                         <th class="border border-black px-4 py-2">PR</th>
+                        <th class="border border-black px-4 py-2">Numeros</th>
                         <th class="border border-black px-4 py-2">ID</th>
                         <th class="border border-black px-4 py-2">Símbolo</th>
                         <th class="border border-black px-4 py-2">Err</th>
